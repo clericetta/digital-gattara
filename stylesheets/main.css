@@ -1,0 +1,275 @@
+/**********************GENERAL*********************/
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Recursive', sans-serif;
+}
+
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+.container {
+	max-width: 700px;
+	margin: 0 auto;
+	padding: 0 auto;
+}
+
+.clearfix::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+.active {
+	background-color: #d6bcc6;
+	border-radius:3px;
+}
+
+img {
+	width: 100%;
+}
+
+main {
+	min-height: calc(100vh - 251.33px - 104px)
+
+}
+
+
+/**********************HEADER**********************/
+header {
+	background: #eb347a;
+	text-align: center;
+	width: 100%;
+
+}
+
+header .logo-container {
+	padding:20px;
+}
+
+header img {
+	width: 160px;
+}
+
+/**********************NAVIGATION**********************/
+nav {
+	background-color: #c92c69;
+	padding: 10px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+nav li {
+  display: inline-block;
+}
+
+
+nav li a {
+  color:#fff;
+  display: inline-block;
+  padding: 5px 10px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+
+  /************************GALLERY***********************/
+#gallery img {
+	width: 100%;
+	height: 100%;
+}
+
+#gallery {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+#gallery .item {
+  width: 50%;
+  float: left;
+  padding: 15px;
+
+
+}
+
+#gallery .caption {
+
+	padding: 10px;
+}
+
+#gallery .caption p {
+	margin: 0;
+}
+
+#gallery .picture {
+	line-height: 0;
+}
+
+
+
+/**************************ABOUT***************************/
+
+#about img {
+	border-radius: 100%;
+	padding: 25px 0;
+}
+
+
+/**************************CONTACT***************************/
+#contact ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+#contact li {
+	padding: 5px 0;
+}
+
+#contact .material-icons {
+	float: left;
+}
+
+#contact .contacts a {
+	margin: 3px 0 0 3px;
+	display: inline-block;
+}
+
+/***********************FOOTER**************************/
+
+
+footer.main {
+	text-align: center;
+	padding: 15;
+}
+
+footer.main img {
+	width: 25px;
+}
+
+footer.main p {
+	font-size: 13px;
+}
+
+footer.main a {
+	display: inline-block;
+	padding: 5px 10px;
+}
+
+@media only screen and (min-width: 768px) {
+
+
+/************************GALLERY***********************/
+#gallery .item {
+  width: 33.3333%;
+
+	}
+
+#gallery .item:nth-child(3n+1) {
+	clear: left;
+
+	}
+
+/************************ABOUT***********************/	
+
+#about h1 {
+	font-size: 20px;
+
+	}
+
+#about .profile-pic {
+	float: left;
+	width: 50%;
+	padding: 15px;
+	text-align: center;
+
+	}
+
+#about .description {
+	float: right;
+	width: 50%;
+	padding: 30px 15px 15px;
+
+	}
+
+
+#about img {
+	width: 70%;
+
+	}
+
+
+/***********************CONTACTS********************/
+#contact h1 {
+	font-size: 20px;
+
+	}
+
+#contact .info {
+	float: left;
+	width: 65%;
+	padding: 15px;
+
+	}
+
+#contact .contacts {
+	float: right;
+	width: 35%;
+	padding: 15px;
+
+	}
+
+}
+
+@media only screen and (min-width: 992px) {
+	
+	nav li a {
+		transition: background .3s;
+
+	}
+
+	nav li a:hover {
+			background-color: #d6bcc6;
+			border-radius:3px;
+
+	}
+
+#gallery .item:hover {
+	opacity: .7;
+
+}
+
+#gallery .item {
+	transition: opacity .3sec;
+
+	}
+
+}
+
+
+
+@media only screen and (max-width: 767px) {
+
+/************************GALLERY***********************/
+#gallery .item:nth-child(2n+1) {
+	clear: left;
+	}
+
+#contact h1 {
+	font-size: 20px;
+
+	}
+
+#about h1 {
+	font-size: 20px;
+
+	}
+}
